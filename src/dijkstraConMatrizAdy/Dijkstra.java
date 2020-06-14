@@ -21,6 +21,12 @@ public class Dijkstra {
 	private Grafo grafo;
 
 	/**
+	 * Algoritmo Dijkstra
+	 * Determina el costo del camino mas corto desde el nodo origen a todos los demas nodos. Donde la
+	 * longitud del camino es la suma de los costos de los vertices del camino.
+	 */
+	
+	/**
 	 * Esta solucion es con implementacion de una matriz de adyacencia y para grafos
 	 * dirigidos. Para grafos no dirigidos hay que descomentar una linea de codigo.
 	 * En la clase app creamos un objeto de la clase Dijkstra y le ingresamos el
