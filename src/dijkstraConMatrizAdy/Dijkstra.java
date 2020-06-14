@@ -52,7 +52,9 @@ public class Dijkstra {
 		return camino;
 	}
 	
-	
+	/*
+	 * Algoritmo de dijkstra.
+	 */
 	private Integer[] algoritmo(int nodoInicial) {
 		int nodoActual, distanciaAristaActual;
 		Integer proximoNodo;
