@@ -24,6 +24,8 @@ public class Dijkstra {
 	 * Algoritmo Dijkstra
 	 * Determina el costo del camino mas corto desde el nodo origen a todos los demas nodos. Donde la
 	 * longitud del camino es la suma de los costos de los vertices del camino.
+	 * Ej: Sirve para calcular desde un pais de origen a otro de destino como gastar el menor combustible. Este algoritmo
+	 * da la ruta mas barata desde el nodo inicial a cada uno de los distintos nodos.
 	 */
 	
 	/**
