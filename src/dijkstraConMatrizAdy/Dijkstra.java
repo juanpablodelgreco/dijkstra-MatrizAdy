@@ -26,7 +26,7 @@ public class Dijkstra {
 	 * En la clase app creamos un objeto de la clase Dijkstra y le ingresamos el
 	 * path del archivo de entrada. El archivo de entrada esta compuesto de la
 	 * siguiente manera: 
-	 * -Una fila que repretenta a nodoInicial, cantidadNodos y cantAristas respectivamente.
+	 * -Una fila que representa a nodoInicial, cantidadNodos y cantAristas respectivamente.
 	 * -N filas que representan a las aristas con nodoDesde nodoHasta costo(N=cantAristas).		
 	 * 
 	 */
