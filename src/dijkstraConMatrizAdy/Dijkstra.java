@@ -38,7 +38,22 @@ public class Dijkstra {
 		guardarResultados();
 	}
 
-	public Integer[] algoritmo(int nodoInicial) {
+	/**
+	 * Si queremos obtener hasta un nodo especifico.
+	 */
+	public List<Integer> getCamino(int nodoHasta) {
+		int i = nodoHasta;
+		List<Integer> camino = new ArrayList<Integer>();
+		camino.add(i);
+		while (i != nodoInicial) {
+			i = predecesores[i];
+			camino.add(i);
+		}
+		return camino;
+	}
+	
+	
+	private Integer[] algoritmo(int nodoInicial) {
 		int nodoActual, distanciaAristaActual;
 		Integer proximoNodo;
 		this.nodoInicial = nodoInicial;
@@ -75,7 +90,7 @@ public class Dijkstra {
 		return distancias;
 	}
 
-	public List<Integer> getAdyacentes(int nodoActual) {
+	private List<Integer> getAdyacentes(int nodoActual) {
 		List<Integer> adyacentes = new ArrayList<Integer>();
 		for (int i = 0; i < this.cantNodos; i++) {
 			if (grafo.getCosto(nodoActual, i) != null)
@@ -84,17 +99,7 @@ public class Dijkstra {
 		return adyacentes;
 	}
 
-	public List<Integer> getCamino(int nodoHasta) {
-		int i = nodoHasta;
-		List<Integer> camino = new ArrayList<Integer>();
-		camino.add(i);
-		while (i != nodoInicial) {
-			i = predecesores[i];
-			camino.add(i);
-		}
-		return camino;
-	}
-	
+
 	private void cargarDatos() {
 		try {
 			Scanner sc = new Scanner(new File(path + ".in"));

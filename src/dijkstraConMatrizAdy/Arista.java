@@ -15,29 +15,12 @@ public class Arista {
 		return desde;
 	}
 
-	public void setDesde(int desde) {
-		this.desde = desde;
-	}
-
 	public int getHasta() {
 		return hasta;
 	}
 
-	public void setHasta(int hasta) {
-		this.hasta = hasta;
-	}
-
 	public int getPeso() {
 		return peso;
-	}
-
-	public void setPeso(int peso) {
-		this.peso = peso;
-	}
-
-	@Override
-	public String toString() {
-		return "Arista [desde=" + (desde+1) + ", hasta=" + (hasta+1) + ", peso=" + peso + "]";
 	}
 	
 	
